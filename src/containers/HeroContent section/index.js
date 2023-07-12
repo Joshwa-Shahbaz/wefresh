@@ -16,7 +16,7 @@ const HeroContent = () => {
           </h1>
           <div className="flex justify-center items-center mt-[10px] lg:justify-start ">
             <Input
-              className=" "
+              className=""
               type={"number"}
               placeholder={"Enter phone number"}
             />
