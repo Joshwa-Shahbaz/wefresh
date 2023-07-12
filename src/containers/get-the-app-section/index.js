@@ -6,7 +6,7 @@ import Image from "next/image";
 import Wrapper from "@/component/Wrapper";
 
 // images
-import AppleButton from "../../../public/AppleButton.png";
+import AppleButton from "../../../public/Applebutton.png";
 import GooglePlayButton from "../../../public/GoogleplayButton.png";
 
 const GetApp = () => {

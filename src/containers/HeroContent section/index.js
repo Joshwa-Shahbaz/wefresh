@@ -2,7 +2,7 @@ import Button from "@/component/button";
 import Input from "@/component/input";
 import React from "react";
 import Image from "next/image";
-import Iphone from "../../../public/iphone_Black.png";
+import Iphone from "../../../public/iPhone_Black.png";
 import Wrapper from "@/component/Wrapper";
 
 const HeroContent = () => {
