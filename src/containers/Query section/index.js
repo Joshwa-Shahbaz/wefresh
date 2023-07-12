@@ -92,7 +92,7 @@ const QuerySection = () => {
         <h1 className="text-[22px] lg:text-[42px] text-[#68BAE3] mt-[100px]">
           Still have a question?
         </h1>
-        <p className="text-[16px] min-w-[241px] p-[39px] lg:p-0 lg:text-[22px]  lg:max-w-[704px] mx-auto text-center text-[#868E95]">
+        <p className="text-[16px] min-w-[241px] p-[39px] lg:p-0 lg:text-[22px]  sm:max-w-[704px] mx-auto text-center text-[#868E95]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore
         </p>

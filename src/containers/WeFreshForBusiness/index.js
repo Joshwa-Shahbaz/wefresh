@@ -11,7 +11,7 @@ const WefreshForBusiness = () => {
         <h1 className="text-[22px] lg:text-[42px] text-[#68BAE3] font-semibold">
           WeFresh <span className="font-normal">Get the app</span>
         </h1>
-        <p className=" min-w-[241px] lg:w-[540px] flex flex-col mx-auto mt-[4px] text-[16px] text-[#868E95]">
+        <p className=" min-w-[241px] sm:w-[540px] flex flex-col mx-auto mt-[4px] text-[16px] text-[#868E95]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
