@@ -1,45 +1,8 @@
 import Wrapper from "@/component/Wrapper";
 import React, { useState } from "react";
 
-const questions = [
-  {
-    id: 1,
-    question: "How to get started?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur cum vero consectetur ab eius excepturi nisi!",
-  },
-  {
-    id: 2,
-    question: "How to get started?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur cum vero consectetur ab eius excepturi nisi!",
-  },
-  {
-    id: 3,
-    question: "How to get started?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur cum vero consectetur ab eius excepturi nisi!",
-  },
-  {
-    id: 4,
-    question: "How to get started?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aspernatur cum vero consectetur ab eius excepturi nisi!",
-  },
-];
-
-const boxes = [
-  {
-    id: 1,
-    h1: "+66 8959888",
-    p: "Lorem ipsum dolor sit amet, consectetur",
-  },
-  {
-    id: 2,
-    h1: "Support@service.com",
-    p: "Lorem ipsum dolor sit amet, consectetur",
-  },
-];
+// content
+import { Questions, Boxes } from "../content";
 
 const QuerySection = () => {
   const [activeId, setActiveId] = useState(null);
@@ -59,7 +22,7 @@ const QuerySection = () => {
         </p>
 
         <div className="max-w-[780px] mx-auto my-[44px]">
-          {questions.map((item) => {
+          {Questions.map((item) => {
             const isActive = activeId === item.id;
             return (
               <React.Fragment key={item.id}>
@@ -97,7 +60,7 @@ const QuerySection = () => {
           eiusmod tempor incididunt ut labore et dolore
         </p>
         <div className="flex flex-col lg:flex-row justify-center items-center mt-[44px]">
-          {boxes.map((item) => {
+          {Boxes.map((item) => {
             return (
               <div
                 key={item.id}

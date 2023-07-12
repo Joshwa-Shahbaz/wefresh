@@ -1,29 +1,15 @@
 import React from "react";
 import Image from "next/image";
-import Iphone from "../../../public/freshmart.png";
-import Circle from "../../../public/circle.png";
+
+// use able component
 import Wrapper from "@/component/Wrapper";
 
-const data = [
-  {
-    id: 1,
-    heading: "Lorem ipsum dolor sit",
-    paragraph:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ",
-  },
-  {
-    id: 2,
-    heading: "Lorem ipsum dolor sit",
-    paragraph:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ",
-  },
-  {
-    id: 3,
-    heading: "Lorem ipsum dolor sit",
-    paragraph:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ",
-  },
-];
+// content
+import { Data } from "../content";
+
+// images
+import Iphone from "../../../public/freshmart.png";
+import Circle from "../../../public/circle.png";
 
 const FreshMart = () => {
   return (
@@ -42,7 +28,7 @@ const FreshMart = () => {
           />
         </div>
         <div className="flex flex-col justify-center mt-[20px]">
-          {data.map((item) => {
+          {Data.map((item) => {
             return (
               <div key={item.id} className="">
                 <div className="relative mb-[10px] w-[320px] rounded-[10px] mx-auto md:w-[577px] md:h-[195px] hover:bg-blue-100 group">
