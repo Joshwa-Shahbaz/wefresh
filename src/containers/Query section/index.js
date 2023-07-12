@@ -21,25 +21,25 @@ const QuerySection = () => {
           Perfect, we’ve got answers!
         </p>
 
-        <div className="max-w-[780px] mx-auto my-[44px]">
+        <div className="max-w-[780px] mx-auto mt-[44px]">
           {Questions.map((item) => {
             const isActive = activeId === item.id;
             return (
               <React.Fragment key={item.id}>
                 <div
-                  className={`min-w-[320px] lg:max-w-[780px] text-start h-[70px] flex-shrink-0 border-[#E8E8E8] border-4 rounded-[10px] my-[12px] mx-auto transition-transform  ${
+                  className={`min-w-[320px] lg:max-w-[780px] text-start h-[70px] flex-shrink-0 border-b-2 md:border-[#E8E8E8] md:border-4 md:rounded-[10px] md:my-[12px] mx-auto ${
                     isActive ? "h-auto" : ""
                   }`}
                   onClick={() => handleToggle(item.id)}
                 >
-                  <h1 className="text-[22px] text-[#14243C] leading-[30px] p-[20px]">
+                  <h1 className="text-[16px] md:text-[22px] text-[#14243C] leading-[30px] p-[20px]">
                     {item.question}
                   </h1>
                 </div>
                 {isActive && (
-                  <div className="max-w-[780px] mt-[12px] text-start h-[180px] flex-shrink-0 rounded-[10px] border-[#68BAE3] border-4">
-                    <div className="flex flex-col p-[30px]">
-                      <h1 className="text-[#68BAE3] text-[22px] font-normal">
+                  <div className="max-w-[780px] mt-0 md:mt-[12px] border-b-2 text-start h-[auto] md:h-[180px] flex-shrink-0 md:rounded-[10px] md:border-[#68BAE3] md:border-4">
+                    <div className="flex flex-col p-[20px]">
+                      <h1 className="text-[#68BAE3] text-[16px] md:text-[22px] font-normal">
                         {item.question}
                       </h1>
                       <p className="my-[12px] text-[16px] text-[#868E95]">
