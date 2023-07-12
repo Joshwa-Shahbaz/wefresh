@@ -1,7 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Iphone from "./../../../public/freshmart.png";
-import Circle from "./../../../public/circle.png";
+import Iphone from "../../../public/freshmart.png";
+// import Iphone from "./../../../public/freshmart.png";
+
+import Circle from "../../../public/circle.png";
 import Wrapper from "@/component/Wrapper";
 
 const data = [
