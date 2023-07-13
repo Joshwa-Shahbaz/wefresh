@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div>
       <Wrapper className="!p-0 h-[auto] lg:h-[336px] border-b-2 overflow-hidden">
-        <div className="grid grid-row-5 lg:grid-cols-5 lg:pl-[100px] pl-[20px] lg:pr-[130px] xl:pl-[249px] xl:pr-[250px] lg:mt-[92px]">
+        <div className="grid grid-row-5 lg:grid-cols-5 lg:pl-[100px] pl-[20px] lg:pr-[130px] xl:pl-[249px] mt-0 xl:pr-[250px] lg:mt-[92px]">
           <div className=" w-[116.09px] h-[43.666px] ">
             <Image src={logo} width="100%" alt="footer logo" />
           </div>

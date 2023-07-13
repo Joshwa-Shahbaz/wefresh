@@ -14,9 +14,9 @@ const QuerySection = () => {
   };
 
   return (
-    <Wrapper className="!p-0">
+    <Wrapper className="!p-0 ">
       <div className="text-center">
-        <h1 className="text-[22px] lg:text-[42px] text-[#68BAE3]">
+        <h1 className="text-[22px] mt-[78px] lg:mt-[109px] lg:text-[42px] text-[#68BAE3]">
           Got questions?
         </h1>
         <p className="text-[16px] lg:text-[22px] text-[#868E95]">
