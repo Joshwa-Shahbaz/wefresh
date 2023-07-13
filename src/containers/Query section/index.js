@@ -4,6 +4,8 @@ import React, { useState } from "react";
 // content
 import { Questions, Boxes } from "../content";
 
+import styles from "./index.module.css";
+
 const QuerySection = () => {
   const [activeId, setActiveId] = useState(null);
 
@@ -28,7 +30,7 @@ const QuerySection = () => {
               <React.Fragment key={item.id}>
                 <div
                   className={`min-w-[320px] lg:max-w-[780px] text-start h-[70px] flex-shrink-0 border-b-2 md:border-[#E8E8E8] md:border-4 md:rounded-[10px] md:my-[12px] mx-auto ${
-                    isActive ? "h-auto" : ""
+                    isActive ? styles.open : styles.closed
                   }`}
                   onClick={() => handleToggle(item.id)}
                 >
@@ -37,7 +39,10 @@ const QuerySection = () => {
                   </h1>
                 </div>
                 {isActive && (
-                  <div className="max-w-[780px] mt-0 md:mt-[12px] border-b-2 text-start h-[auto] md:h-[180px] flex-shrink-0 md:rounded-[10px] md:border-[#68BAE3] md:border-4">
+                  <div
+                    id={item.id}
+                    className={`max-w-[780px] mt-0 md:mt-[12px] border-b-2 text-start h-[auto] md:h-[180px] flex-shrink-0 md:rounded-[10px] md:border-[#68BAE3] md:border-4 ${styles.open}`}
+                  >
                     <div className="flex flex-col p-[20px]">
                       <h1 className="text-[#68BAE3] text-[16px] md:text-[22px] font-normal">
                         {item.question}
