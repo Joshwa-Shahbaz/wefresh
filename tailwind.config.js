@@ -10,6 +10,7 @@ module.exports = {
       },
       screens: {
         "small-mobile": "450px",
+        tap: "540px",
         check: "675px",
         b: "930px",
         xxl: "1600px",

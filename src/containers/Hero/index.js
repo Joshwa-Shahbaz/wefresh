@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <Wrapper className="!p-0  overflow-hidden ">
       <Image
-        className="w-screen absolute -top-16  -z-50 small-mobile:-top-60 check:-top-[380px] sm:-top-[320px] md:-top-[410px] b:-top-[540px] lg:hidden "
+        className="w-screen absolute -top-[65px]  -z-50 small-mobile:-top-60 check:-top-[380px] sm:-top-[320px] md:-top-[410px] b:-top-[540px] lg:hidden "
         src={MobileImage}
         alt=""
       />

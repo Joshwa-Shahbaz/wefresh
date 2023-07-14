@@ -15,7 +15,7 @@ const FreshMart = () => {
   return (
     <Wrapper className="!p-0 overflow-hidden relative">
       <div className="my-[50px] items-center lg:flex lg:justify-around">
-        <div className="flex justify-center items-center ">
+        <div className="flex justify-center items-center lg:pl-[101px] ">
           <Image
             className=" abaolute top-[64.95px] w-[157.783px] h-[319px] md:top-[167px] md:w-[286px] md:h-[580px]"
             src={Iphone}
