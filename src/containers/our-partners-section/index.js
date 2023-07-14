@@ -22,7 +22,7 @@ const OurPartners = () => {
               eiusmod.
             </p>
           </div>
-          <div className="-z-50 w-[473px] h-[354px] md:w-[547px] xl:w-[547px] xl:h-[410px] lg:w-[450px] ">
+          <div className="-z-50 w-[473px] h-[354px] md:w-[547px] xl:w-[547px] xl:h-[410px] lg:w-[450px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="100%"
@@ -59,7 +59,7 @@ const OurPartners = () => {
         </div>
 
         {/* ************************* */}
-        <div className="absolute top-0 -left-[8%] tap:left-[8%] sm:left-[18%] md:left-[21%] lg:hidden">
+        <div className="absolute top-0 -left-[8%] tap:left-[8%] sm:left-[18%] md:left-[25%] lg:hidden">
           <div className="absolute w-[91px] h-[91px]  md:w-[130px] md:h-[130px] top-[396px] left-[97px]">
             <Image src={Seven} width="100%" alt="seven-logo" />
           </div>

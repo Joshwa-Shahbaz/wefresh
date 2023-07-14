@@ -1,82 +1,74 @@
-<!-- import Wrapper from "@/component/Wrapper";
-import React, { useState } from "react";
+import Wrapper from "@/component/Wrapper";
+import Image from "next/image";
+import React from "react";
+import MobileImage from "../../../public/fill.png";
 
-// content
-import { Questions, Boxes } from "../content";
+import HeroContent from "../HeroContent section/index.js";
 
-const QuerySection = () => {
-  const [activeId, setActiveId] = useState(null);
-
-  const handleToggle = (id) => {
-    setActiveId((prevId) => (prevId === id ? null : id));
-  };
-
+const Hero = () => {
   return (
-    <Wrapper className="!p-0">
-      <div className="text-center">
-        <h1 className="text-[22px] lg:text-[42px] text-[#68BAE3]">
-          Got questions?
-        </h1>
-        <p className="text-[16px] lg:text-[22px] text-[#868E95]">
-          Perfect, we’ve got answers!
-        </p>
-
-        <div className="max-w-[780px] mx-auto mt-[44px]">
-          {Questions.map((item) => {
-            const isActive = activeId === item.id;
-            return (
-              <React.Fragment key={item.id}>
-                <div
-                  className={`min-w-[320px] lg:max-w-[780px] text-start h-[70px] flex-shrink-0 border-b-2 md:border-[#E8E8E8] md:border-4 md:rounded-[10px] md:my-[12px] mx-auto ${
-                    isActive ? "h-auto" : ""
-                  }`}
-                  onClick={() => handleToggle(item.id)}
-                >
-                  <h1 className="text-[16px] md:text-[22px] text-[#14243C] leading-[30px] p-[20px]">
-                    {item.question}
-                  </h1>
-                </div>
-                {isActive && (
-                  <div className="max-w-[780px] mt-0 md:mt-[12px] border-b-2 text-start h-[auto] md:h-[180px] flex-shrink-0 md:rounded-[10px] md:border-[#68BAE3] md:border-4">
-                    <div className="flex flex-col p-[20px]">
-                      <h1 className="text-[#68BAE3] text-[16px] md:text-[22px] font-normal">
-                        {item.question}
-                      </h1>
-                      <p className="my-[12px] text-[16px] text-[#868E95]">
-                        {item.answer}
-                      </p>
-                    </div>
-                  </div>
-                )}
-              </React.Fragment>
-            );
-          })}
-        </div>
-        <h1 className="text-[22px] lg:text-[42px] text-[#68BAE3] mt-[100px]">
-          Still have a question?
-        </h1>
-        <p className="text-[16px] min-w-[241px] p-[39px] lg:p-0 lg:text-[22px]  sm:max-w-[704px] mx-auto text-center text-[#868E95]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore
-        </p>
-        <div className="flex flex-col lg:flex-row justify-center items-center mt-[44px]">
-          {Boxes.map((item) => {
-            return (
-              <div
-                key={item.id}
-                className="w-[280px] h-[199px] lg:w-[380px] lg:h-[199px] mt-[17px] lg:mt-0  rounded-[10px] border-[#E8E8E8] border-2  ml-[20px] relative "
-              >
-                <div className="relative text-center top-[50%] ">
-                  <h1 className="text-[22px] text-[#14243C]  ">{item.h1}</h1>
-                  <p className="text-[#868E95] text-[16px]">{item.p}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+    <Wrapper className="!p-0  overflow-hidden ">
+      <Image
+        className="w-screen absolute -top-[65px]  -z-50 small-mobile:-top-60 check:-top-[380px] sm:-top-[320px] md:-top-[410px] b:-top-[540px] lg:hidden "
+        src={MobileImage}
+        alt=""
+      />
+      {/* fill for large screen */}
+      {/* blue fill  */}
+      <div className="hidden lg:block absolute lg:-left-[400px] -z-50 xl:-left-[250px] 2xl:-left-[100px] xxl:-left-[0] ">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1139"
+          height="889"
+          viewBox="0 0 830 794"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M830 326.814C830 566.501 456.183 833.786 197.229 788.109C-61.7257 742.432 -309 409.823 -309 170.136C-309 -69.5501 6.13835 -96 231.269 -96C456.4 -96 830 87.1273 830 326.814"
+            fill="#96D5F0"
+          />
+        </svg>
       </div>
+      {/* light blue fill */}
+      <div className="absolute hidden 2xl:block left-[1205px] -z-50 flex-shrink-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="732"
+          height="153"
+          viewBox="0 0 732 153"
+          fill="none"
+        >
+          <path
+            opacity="0.197568"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 -134.595C0 13.0244 240.24 177.641 406.662 149.51C573.084 121.378 732 -83.471 732 -231.09C732 -378.71 529.47 -395 384.786 -395C240.101 -395 0 -282.215 0 -134.595"
+            fill="#96D5F0"
+          />
+        </svg>
+      </div>
+      {/* right blue fill */}
+      <div className="hidden lg:block absolute lg:top-[77px]  lg:-right-[100px] xl:-right-[80px] 2xl:-right-10   ">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="182"
+          height="397"
+          viewBox="0 0 182 397"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 178.113C0 66.7069 101.082 0 212.532 0C323.982 0 468 48.5139 468 159.921C468 271.327 332.569 397 221.119 397C109.669 397 0 289.52 0 178.113Z"
+            fill="#96D5F0"
+          />
+        </svg>
+      </div>
+      <HeroContent />
     </Wrapper>
   );
 };
 
-export default QuerySection; -->
+export default Hero;

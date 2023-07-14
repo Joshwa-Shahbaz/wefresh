@@ -8,7 +8,7 @@ import Wrapper from "@/component/Wrapper";
 const HeroContent = () => {
   return (
     <Wrapper className="!p-0 w-screen overflow-hidden">
-      <div className="my-[120px] p-2 lg:flex lg:justify-around">
+      <div className="mt-[70px] md:mt-[120px] p-2 lg:flex lg:justify-around">
         <div className="lg:my-[167px]">
           <h1 className="text-[22px] text-white text-center md:text-[45px] lg:text-[52px] lg:text-start ">
             The smarter way <br />
@@ -29,7 +29,7 @@ const HeroContent = () => {
             Avaliable on
           </h1>
         </div>
-        <div className="flex justify-center items-center mt-36 b:mt-[250px] md:mt-[290px] sm:mt-[160px] lg:mt-0">
+        <div className="flex justify-center items-center mt-28 mini-phones:mt-44  b:mt-[230px] md:mt-[190px] sm:mt-[190px] lg:mt-0">
           <Image
             className=" abaolute top-[64.95px] w-[157.783px] h-[319px] md:top-[167px] md:w-[291px] md:h-[580px]"
             src={Iphone}

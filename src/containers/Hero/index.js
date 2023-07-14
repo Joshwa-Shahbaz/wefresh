@@ -7,12 +7,14 @@ import HeroContent from "../HeroContent section/index.js";
 
 const Hero = () => {
   return (
-    <Wrapper className="!p-0  overflow-hidden ">
+    <Wrapper className="!p-0 h-[auto] lg:h-[840px] overflow-hidden ">
       <Image
-        className="w-screen absolute -top-[65px]  -z-50 small-mobile:-top-60 check:-top-[380px] sm:-top-[320px] md:-top-[410px] b:-top-[540px] lg:hidden "
+        className="w-screen absolute -top-16  -z-50 small-mobile:-top-60 check:-top-[380px] sm:-top-[320px] md:-top-[410px] b:-top-[520px] lg:hidden "
         src={MobileImage}
+        width="100%"
         alt=""
       />
+
       {/* fill for large screen */}
       {/* blue fill  */}
       <div className="hidden lg:block absolute lg:-left-[400px] -z-50 xl:-left-[250px] 2xl:-left-[100px] xxl:-left-[0] ">
@@ -50,7 +52,7 @@ const Hero = () => {
         </svg>
       </div>
       {/* right blue fill */}
-      <div className="hidden lg:block absolute lg:top-[77px]  lg:-right-[100px] xl:-right-[80px] 2xl:-right-10   ">
+      <div className="hidden lg:block absolute lg:top-[77px] -z-50 lg:-right-[140px] xl:-right-[80px] 2xl:-right-10 ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="182"
