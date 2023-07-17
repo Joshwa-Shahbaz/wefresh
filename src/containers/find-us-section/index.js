@@ -7,9 +7,9 @@ import YellowFill from "../../../public/find-yellow-fill";
 
 const FindUs = () => {
   return (
-    <Wrapper className="!p-0  h-[702px] overflow-hidden">
+    <Wrapper className="!p-0 lg:relative h-[702px] overflow-hidden">
       <div className="flex justify-around ">
-        <div className="mt-[288px]">
+        <div className="mt-[288px] ml-[203px] mr-[50px]">
           <h1 className="text-[42px] text-blue">
             Find us in these <span className="font-semibold">Area</span>
           </h1>
@@ -18,8 +18,8 @@ const FindUs = () => {
             <Button>Search</Button>
           </div>
         </div>
-        <div className="relative  ">
-          <div className="w-[807px] h-[630px] absolute  -z-50">
+        <div className="relative">
+          <div className="w-[807px] h-[630px] absolute -right-10 -z-50">
             <ServiceFill />
           </div>
           <div className="w-[620px] h-[413px]  mt-[154px] ">
