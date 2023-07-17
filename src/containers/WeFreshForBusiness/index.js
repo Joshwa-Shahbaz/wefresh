@@ -8,10 +8,10 @@ const WefreshForBusiness = () => {
   return (
     <>
       <Wrapper className="!p-0 h-[400px] mt-[106px] text-center">
-        <h1 className="text-[22px] lg:text-[42px] text-[#68BAE3] font-semibold">
+        <h1 className="text-[22px] lg:text-[42px] text-blue font-semibold">
           WeFresh <span className="font-normal">Get the app</span>
         </h1>
-        <p className=" min-w-[241px] sm:w-[540px] flex flex-col mx-auto mt-[4px] text-[16px] text-[#868E95]">
+        <p className=" min-w-[241px] sm:w-[540px] flex flex-col mx-auto mt-[4px] text-[16px] text-grey">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>

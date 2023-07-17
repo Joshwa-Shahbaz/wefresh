@@ -13,10 +13,10 @@ const OurPartners = () => {
       <div className="flex justify-center flex-col lg:flex-row lg:justify-between  lg:pl-[124px]">
         <div class="flex flex-col  items-center justify-center relative mt-0 lg:mt-[227px]">
           <div className="absolute text-start">
-            <h1 class=" text-[#68BAE3] text-[22px] text-center lg:text-start  lg:text-[42px]">
+            <h1 class=" text-blue text-[22px] text-center lg:text-start  lg:text-[42px]">
               Our <span className="font-semibold">Partner</span>
             </h1>
-            <p className="w-[326px] text-[16px] h-[120px] text-[#868E95]">
+            <p className="w-[326px] text-[16px] h-[120px] text-grey">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. sed do
               eiusmod.

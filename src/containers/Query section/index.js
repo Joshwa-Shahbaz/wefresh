@@ -16,10 +16,10 @@ const QuerySection = () => {
   return (
     <Wrapper className="!p-0 ">
       <div className="text-center">
-        <h1 className="text-[22px] mt-[78px] lg:mt-[109px] lg:text-[42px] text-[#68BAE3]">
+        <h1 className="text-[22px] mt-[78px] lg:mt-[109px] lg:text-[42px] text-blue">
           Got questions?
         </h1>
-        <p className="text-[16px] lg:text-[22px] text-[#868E95]">
+        <p className="text-[16px] lg:text-[22px] text-grey">
           Perfect, we’ve got answers!
         </p>
 
@@ -47,7 +47,7 @@ const QuerySection = () => {
                       <h1 className="text-[#68BAE3] text-[16px] md:text-[22px] font-normal">
                         {item.question}
                       </h1>
-                      <p className="my-[12px] text-[16px] text-[#868E95]">
+                      <p className="my-[12px] text-[16px] text-grey">
                         {item.answer}
                       </p>
                     </div>
@@ -57,10 +57,10 @@ const QuerySection = () => {
             );
           })}
         </div>
-        <h1 className="text-[22px] lg:text-[42px] text-[#68BAE3] mt-[100px]">
+        <h1 className="text-[22px] lg:text-[42px] text-blue mt-[100px]">
           Still have a question?
         </h1>
-        <p className="text-[16px] min-w-[241px] p-[39px] lg:p-0 lg:text-[22px]  sm:max-w-[704px] mx-auto text-center text-[#868E95]">
+        <p className="text-[16px] min-w-[241px] p-[39px] lg:p-0 lg:text-[22px]  sm:max-w-[704px] mx-auto text-center text-grey">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore
         </p>
@@ -69,7 +69,7 @@ const QuerySection = () => {
             return (
               <div
                 key={item.id}
-                className="w-[280px] h-[199px] lg:w-[380px] lg:h-[199px] mt-[17px] lg:mt-0  rounded-[10px] border-[#E8E8E8] border-2  ml-[20px] relative "
+                className="w-[280px] h-[199px] lg:w-[380px] lg:h-[199px] mt-[17px] lg:mt-0  rounded-[10px] border-[#E8E8E8] border-2  ml-[20px] relative"
               >
                 <div className="relative text-center top-[50%] ">
                   <h1 className="text-[22px] text-[#14243C]  ">{item.h1}</h1>

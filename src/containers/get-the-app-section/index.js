@@ -13,10 +13,10 @@ const GetApp = () => {
   return (
     <>
       <Wrapper className=" h-[430px] text-center relative">
-        <h1 className=" text-[22px] lg:text-[42px] mt-[106px]  text-[#68BAE3]">
+        <h1 className=" text-[22px] lg:text-[42px] mt-[106px]  text-blue">
           Ready to <span className="font-semibold">Get the app</span>
         </h1>
-        <p className="min-w-[241px] sm:max-w-[540px] flex flex-col mx-auto mt-[4px] text-[16px] text-[#868E95]">
+        <p className="min-w-[241px] sm:max-w-[540px] flex flex-col mx-auto mt-[4px] text-[16px] text-grey">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore
         </p>

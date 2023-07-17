@@ -16,6 +16,11 @@ module.exports = {
         b: "900px",
         xxl: "1600px",
       },
+      colors: {
+        blue: "#68BAE3",
+        grey: "#868E95",
+        "light-blue": "#E1F3F3",
+      },
     },
   },
   plugins: [],
