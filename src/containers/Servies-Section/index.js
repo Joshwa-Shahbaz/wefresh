@@ -35,13 +35,16 @@ const Services = () => {
       <div className="hidden lg:flex justify-center mt-[82px]">
         {data.map((item) => {
           return (
-            <div className="w-[220px] h-[240px]" key={item.id}>
+            <div
+              className="w-[220px] h-[240px] hover:scale-105 transition-transform group"
+              key={item.id}
+            >
               <img
                 className="mx-[55px] w-[120px] h-[120px]"
                 src={item.image}
                 alt={item.title}
               />
-              <h1 className="flex justify-center mt-[15px] text-grey text-[22px]">
+              <h1 className="flex justify-center mt-[15px] text-grey text-[22px] group-hover:text-blue">
                 {item.title}
               </h1>
             </div>
