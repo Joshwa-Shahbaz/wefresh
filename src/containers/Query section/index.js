@@ -1,9 +1,12 @@
-import Wrapper from "@/component/Wrapper";
 import React, { useState } from "react";
+
+// use-able component
+import Wrapper from "@/component/Wrapper";
 
 // content
 import { Questions, Boxes } from "../content";
 
+// styles
 import styles from "./index.module.css";
 
 const QuerySection = () => {
@@ -34,7 +37,7 @@ const QuerySection = () => {
                   }`}
                   onClick={() => handleToggle(item.id)}
                 >
-                  <h1 className="text-[16px] md:text-[22px] text-[#14243C] leading-[30px] p-[20px]">
+                  <h1 className="text-[16px] lg:text-[22px] text-[#14243C] leading-[30px] p-[20px]">
                     {item.question}
                   </h1>
                 </div>
@@ -44,7 +47,7 @@ const QuerySection = () => {
                     className={`max-w-[780px] mt-0 md:mt-[12px] border-b-2 text-start  md:h-[180px] flex-shrink-0 md:rounded-[10px] md:border-[#68BAE3] md:border-4 ${styles.open}`}
                   >
                     <div className="flex flex-col p-[20px]">
-                      <h1 className="text-[#68BAE3] text-[16px] md:text-[22px] font-normal">
+                      <h1 className="text-[#68BAE3] text-[16px] lg:text-[22px] font-normal">
                         {item.question}
                       </h1>
                       <p className="my-[12px] text-[16px] text-grey">

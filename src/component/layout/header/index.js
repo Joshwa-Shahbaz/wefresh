@@ -10,6 +10,7 @@ import Wrapper from "../../Wrapper";
 import Logo from "../../../../public/wefresh-logo";
 import Toggle from "../../../../public/togglle-bar";
 import CloseButton from "../../../../public/Close-button";
+import Button from "@/component/button";
 
 const Header = () => {
   const [mobileMenuVisible, setMobileMenuVisible] = useState(false);
@@ -67,7 +68,26 @@ const Header = () => {
           className={`fixed top-[80px] left-0 bottom-0 right-0 h-[90vh] bg-blue lg:hidden ${
             mobileMenuVisible ? "block" : "hidden"
           } scroll-auto z-50 `}
-        ></div>
+        >
+          <div className="flex flex-col border-[#E8E8E8] border-t-2 ml-[20px]   mr-[20px] mt-[28px] ">
+            {options.map((item, index) => {
+              return (
+                <div className=" pt-[11px] border-[#E8E8E8] border-b-2  pb-[13px]">
+                  <Link
+                    key={index}
+                    href="#"
+                    className="text-white text text-[16px] "
+                  >
+                    {item}
+                  </Link>
+                </div>
+              );
+            })}
+            <div className="flex justify-center mt-[37px]">
+              <Button className="w-[280px]">Sign up</Button>
+            </div>
+          </div>
+        </div>
       </Wrapper>
     </>
   );

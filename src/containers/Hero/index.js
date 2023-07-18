@@ -1,9 +1,12 @@
-import Wrapper from "@/component/Wrapper";
 import Image from "next/image";
 import React from "react";
+
+// image
 import MobileImage from "../../../public/fill.png";
 
+// use-able component
 import HeroContent from "../HeroContent section/index.js";
+import Wrapper from "@/component/Wrapper";
 
 const Hero = () => {
   return (

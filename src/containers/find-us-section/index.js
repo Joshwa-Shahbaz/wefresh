@@ -1,7 +1,11 @@
+import React from "react";
+
+// useable component
 import Wrapper from "@/component/Wrapper";
 import Button from "@/component/button";
 import Input from "@/component/input";
-import React from "react";
+
+// images
 import ServiceFill from "../../../public/service-fill";
 import YellowFill from "../../../public/find-yellow-fill";
 
@@ -10,10 +14,10 @@ const FindUs = () => {
     <Wrapper className="!p-0  h-[680px] md:h-[960px] lg:h-[702px] ">
       <div className="flex justify-center items-center lg:justify-around relative ">
         <div className="mt-[51px] lg:mt-[288px] ml-0 lg:ml-[50px] xl:ml-[170px] 2xl:ml-[203px] lg:mr-[50px]">
-          <h1 className="text-[22px] flex justify-center lg:justify-start md:text-[42px] text-blue">
+          <h1 className="text-[22px] flex justify-center lg:justify-start lg:text-[42px] text-blue">
             Find us in these <span className="font-semibold">Area</span>
           </h1>
-          <div className="flex flex-row gap-[19px] items-center justify-center mt-[22px]">
+          <div className="flex flex-row gap-[10px] items-center justify-center mt-[26px]">
             <Input type={"text"} placeholder={"Enter your area"} />
             <Button>Search</Button>
           </div>

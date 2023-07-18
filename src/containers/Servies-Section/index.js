@@ -1,8 +1,14 @@
-import Wrapper from "@/component/Wrapper";
 import React from "react";
+
+// import from swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+
+// content
 import { Service } from "../content";
+
+// use-able component
+import Wrapper from "@/component/Wrapper";
 
 const Services = () => {
   return (

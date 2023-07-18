@@ -1,6 +1,10 @@
-import Wrapper from "@/component/Wrapper";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+
+// use-able componet
+import Wrapper from "@/component/Wrapper";
+
+// images
 import Seven from "../../../public/7-Eleven.png";
 import Makro from "../../../public/Makro.png";
 import TrueCoffee from "../../../public/TrueCoffee.png";
@@ -58,7 +62,7 @@ const OurPartners = () => {
           </div>
         </div>
 
-        {/* ************************* */}
+        {/* ************** div for medium to mobile size  *********** */}
         <div className="flex justify-center relative  lg:hidden">
           <div className="absolute w-[91px] h-[91px]  md:w-[175px] md:h-[175px] top-[40px] left-[60px] sm:left-[97px] md:left-[150px]">
             <Image src={Seven} width="100%" alt="seven-logo" />

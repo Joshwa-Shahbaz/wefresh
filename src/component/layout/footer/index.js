@@ -79,6 +79,11 @@ const Footer = () => {
             </div>
           </div>
         </footer>
+        <div className="border-t-2 w-screen mt-[55px] lg:mt-0">
+          <h1 className="mt-[24px] mb-[65px] md:mb-[20px] ml-[13px] md:ml-[200px] lg:ml-[250px] text-grey text-[16px]">
+            © 2020 WeFresh. All Rights Reserved.
+          </h1>
+        </div>
       </Wrapper>
     </>
   );

@@ -1,14 +1,18 @@
-import Button from "@/component/button";
-import Input from "@/component/input";
 import React from "react";
 import Image from "next/image";
+
+// image
 import Iphone from "../../../public/iPhone_Black.png";
+
+// useable component
 import Wrapper from "@/component/Wrapper";
+import Button from "@/component/button";
+import Input from "@/component/input";
 
 const HeroContent = () => {
   return (
     <Wrapper className="!p-0 w-screen overflow-hidden">
-      <div className="mt-[70px] md:mt-[120px] p-2 lg:flex lg:justify-around">
+      <div className="mt-[90px] md:mt-[120px] p-2 lg:flex lg:justify-around">
         <div className="lg:my-[167px]">
           <h1 className="text-[22px] text-white text-center md:text-[45px] lg:text-[52px] lg:text-start ">
             The smarter way <br />
@@ -24,7 +28,7 @@ const HeroContent = () => {
           </div>
           <h1
             children
-            className="flex justify-center text-white text-[22px] lg:block lg:mt-[15px]"
+            className="flex justify-center text-white text-[16px] lg:text-[22px] lg:block lg:mt-[15px]"
           >
             Avaliable on
           </h1>

@@ -1,8 +1,9 @@
+import React from "react";
+
+// use-able component
 import Wrapper from "@/component/Wrapper";
 import Button from "@/component/button";
 import Input from "@/component/input";
-
-import React from "react";
 
 const WefreshForBusiness = () => {
   return (
