@@ -58,3 +58,26 @@ export const Boxes = [
     p: "Lorem ipsum dolor sit amet, consectetur",
   },
 ];
+
+export const Service = [
+  {
+    id: 1,
+    image: "/Store.png",
+    title: "Store",
+  },
+  {
+    id: 2,
+    image: "/Grocery.png",
+    title: "Grocery",
+  },
+  {
+    id: 3,
+    image: "/Cafe.png",
+    title: "Cafe",
+  },
+  {
+    id: 4,
+    image: "/food.png",
+    title: "Food",
+  },
+];

@@ -2,29 +2,7 @@ import Wrapper from "@/component/Wrapper";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-
-const data = [
-  {
-    id: 1,
-    image: "/Store.png",
-    title: "Store",
-  },
-  {
-    id: 2,
-    image: "/Grocery.png",
-    title: "Grocery",
-  },
-  {
-    id: 3,
-    image: "/Cafe.png",
-    title: "Cafe",
-  },
-  {
-    id: 4,
-    image: "/food.png",
-    title: "Food",
-  },
-];
+import { Service } from "../content";
 
 const Services = () => {
   return (
@@ -33,7 +11,7 @@ const Services = () => {
         We've more<span className="font-semibold">&nbsp;services</span>
       </h1>
       <div className="hidden lg:flex justify-center mt-[82px]">
-        {data.map((item) => {
+        {Service.map((item) => {
           return (
             <div
               className="w-[220px] h-[240px] hover:scale-105 transition-transform group"
@@ -52,17 +30,33 @@ const Services = () => {
         })}
       </div>
 
-      <div className="flex justify-center  mt-[75px] lg:hidden">
-        <Swiper loop={true} spaceBetween={50} slidesPerView={3}>
-          {data.map((item, index) => (
+      <div className="flex justify-center md:ml-[50px] ml-0  mt-[75px] lg:hidden">
+        <Swiper
+          className="bg-swiper-bg lg:bg-white"
+          loop={true}
+          spaceBetween={50}
+          slidesPerView={1.7}
+          breakpoints={{
+            640: {
+              slidesPerView: 2.7,
+            },
+            768: {
+              slidesPerView: 3,
+            },
+            1024: {
+              slidesPerView: 4,
+            },
+          }}
+        >
+          {Service.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className=" flex flex-col justify-center items-center w-[186px] h-[230px]">
+              <div className=" flex flex-col justify-center items-center hover:scale-105 transition-transform group w-[186px] h-[220px]  ">
                 <img
                   className="w-[120px] h-[120px]"
                   src={item.image}
                   alt={item.title}
                 />
-                <h1 className="mt-[15px] text-grey text-[22px]">
+                <h1 className="mt-[15px] text-grey text-[22px] group-hover:text-blue">
                   {item.title}
                 </h1>
               </div>

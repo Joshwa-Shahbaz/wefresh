@@ -41,7 +41,7 @@ const QuerySection = () => {
                 {isActive && (
                   <div
                     id={item.id}
-                    className={`max-w-[780px] mt-0 md:mt-[12px] border-b-2 text-start h-[auto] md:h-[180px] flex-shrink-0 md:rounded-[10px] md:border-[#68BAE3] md:border-4 ${styles.open}`}
+                    className={`max-w-[780px] mt-0 md:mt-[12px] border-b-2 text-start  md:h-[180px] flex-shrink-0 md:rounded-[10px] md:border-[#68BAE3] md:border-4 ${styles.open}`}
                   >
                     <div className="flex flex-col p-[20px]">
                       <h1 className="text-[#68BAE3] text-[16px] md:text-[22px] font-normal">
