@@ -59,20 +59,20 @@ const OurPartners = () => {
         </div>
 
         {/* ************************* */}
-        <div className="absolute top-0 -left-[8%] tap:left-[8%] sm:left-[18%] md:left-[25%] lg:hidden">
-          <div className="absolute w-[91px] h-[91px]  md:w-[130px] md:h-[130px] top-[396px] left-[97px]">
+        <div className="flex justify-center relative  lg:hidden">
+          <div className="absolute w-[91px] h-[91px]  md:w-[175px] md:h-[175px] top-[40px] left-[60px] sm:left-[97px] md:left-[150px]">
             <Image src={Seven} width="100%" alt="seven-logo" />
           </div>
-          <div className="absolute w-[91px] h-[91px] md:w-[130px] md:h-[130px] top-[555px] left-[97px]">
+          <div className="absolute w-[91px] h-[91px] md:w-[175px] md:h-[175px] top-[201px] left-[60px] sm:left-[97px] md:left-[150px] ">
             <Image src={Makro} width="100%" alt="seven-logo" />
           </div>
-          <div className="absolute w-[91px] h-[91px] md:w-[130px] md:h-[130px] top-[481px] left-[181px]">
+          <div className="flex justify-center absolute top-[127px] w-[91px] h-[91px] md:w-[175px] md:h-[175px] ">
             <Image src={TrueCoffee} width="100%" alt="seven-logo" />
           </div>
-          <div className="absolute w-[91px] h-[91px] md:w-[130px] md:h-[130px] top-[441px] left-[287px]">
+          <div className="absolute w-[91px] h-[91px] md:w-[130px] md:h-[130px] float-right  top-[87px] right-[60px] sm:right-[96px] md:right-[150px] ">
             <Image src={TrueYou} width="100%" alt="seven-logo" />
           </div>
-          <div className="absolute w-[91px] h-[91px] md:w-[130px] md:h-[130px] top-[570px] left-[256px]">
+          <div className="absolute w-[91px] h-[91px] md:w-[130px] md:h-[130px] top-[216px] float-right right-[60px] sm:right-[96px] md:right-[150px]">
             <Image src={CpFreshmart} width="100%" alt="seven-logo" />
           </div>
         </div>
