@@ -25,19 +25,24 @@ const FindUs = () => {
           <div className="lg:w-[450px] 2xl:w-[620px] h-[413px]  mt-[154px] mr-[50px]">
             <img src="/area-img.png" alt="area main image" />
           </div>
-          <div className="w-[468px] h-[397px] absolute top-[260px]  lg:right-[70px] xl:right-[100px] 2xl:right-[250px] -z-50 ">
+          <div className="w-[468px] h-[397px] absolute top-[260px]  lg:right-[60px] xl:right-[130px] 2xl:right-[250px] -z-50 ">
             <YellowFill />
           </div>
         </div>
       </div>
-      <div className="relative lg:hidden md:mb-[159px]">
+
+      {/* div for medium  to small size screen */}
+
+      <div className="relative lg:hidden">
         <div className="sm:w-[404px] sm:h-[315px] md:w-[807px] md:h-[630px]  absolute right-0 -z-50">
           <ServiceFill />
         </div>
-        <div className="w-[310px]  h-[206.5px] md:w-[620px] md:h-[413px]  md:mt-[140px] mt-[70px] mr-[50px] float-right">
-          <img src="/area-img.png" alt="area main image" />
+        <div className="flex justify-center lg:hidden md:mb-[159px]">
+          <div className="w-[310px]  h-[206.5px] md:w-[620px] md:h-[413px]  md:mt-[140px] mt-[70px]">
+            <img src="/area-img.png" alt="area main image" />
+          </div>
         </div>
-        <div className="w-[234px] h-[199px] md:w-[468px] md:h-[397px] small-mobile:left-[10%] absolute top-[120px] tap:left-[20%] sm:left-[40%] md:top-[305px]  md:left-[95px]  b:left-[130px] -z-50 ">
+        <div className="w-[234px] h-[199px] md:w-[468px] md:h-[397px] small-mobile:left-[10%] absolute top-[120px] tap:left-[15%] sm:left-[18%] md:top-[305px]  md:left-[30px]  b:left-[70px] -z-50 ">
           <YellowFill />
         </div>
       </div>
