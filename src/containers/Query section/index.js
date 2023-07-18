@@ -69,7 +69,7 @@ const QuerySection = () => {
             return (
               <div
                 key={item.id}
-                className="w-[280px] h-[199px] lg:w-[380px] lg:h-[199px] mt-[17px] lg:mt-0  rounded-[10px] border-[#E8E8E8] border-2  ml-[20px] relative"
+                className="w-[280px] h-[199px] lg:w-[380px] lg:h-[199px] mt-[17px] lg:mt-0  rounded-[10px] border-[#E8E8E8] border-2  lg:ml-[20px] relative"
               >
                 <div className="relative text-center top-[50%] ">
                   <h1 className="text-[22px] text-[#14243C]  ">{item.h1}</h1>
