@@ -1,37 +1,90 @@
-// import Wrapper from "@/component/Wrapper";
-// import Button from "@/component/button";
-// import Input from "@/component/input";
-// import React from "react";
-// import ServiceFill from "../../../public/service-fill";
-// import YellowFill from "../../../public/find-yellow-fill";
+<!-- import React, { useState } from "react";
 
-// const FindUs = () => {
-//   return (
-//     <Wrapper className="!p-0  h-[702px] overflow-hidden">
-//       <div className="flex -mr-[100px]">
-//         <div className=" flexflex-col w-[746px] mt-[288px] ml-[253px]">
-//           <h1 className="text-[42px] text-blue">
-//             Find us in these <span className="font-semibold">Area</span>
-//           </h1>
-//           <div className="flex-row gap-[19px] items-center justify-center mt-[22px]">
-//             <Input type={"text"} placeholder={"Enter your area"} />
-//             <Button>Search</Button>
-//           </div>
-//         </div>
-//         <div className="w-[694px]  ">
-//           <div className="w-[807px] h-[630px] absolute  -z-50">
-//             <ServiceFill />
-//           </div>
-//           <div className="w-[620px] h-[413px]  mt-[154px] ">
-//             <img src="/area-img.png" alt="area main image" />
-//           </div>
-//           {/* <div className="w-[468px] h-[397px] absolute top-[305px] -left-[80px] -z-50 ">
-//             <YellowFill />
-//           </div> */}
-//         </div>
-//       </div>
-//     </Wrapper>
-//   );
-// };
+// use-able component
+import Wrapper from "@/component/Wrapper";
 
-// export default FindUs;
+// content
+import { Questions, Boxes } from "../content";
+
+// styles
+import styles from "./index.module.css";
+
+const QuerySection = () => {
+  const [activeId, setActiveId] = useState(null);
+
+  const handleToggle = (id) => {
+    setActiveId((prevId) => (prevId === id ? null : id));
+  };
+
+  return (
+    <Wrapper className="!p-0 ">
+      <div className="text-center">
+        <h1 className="text-[22px] mt-[78px] lg:mt-[109px] lg:text-[42px] text-blue">
+          Got questions?
+        </h1>
+        <p className="text-[16px] lg:text-[22px] text-grey">
+          Perfect, we’ve got answers!
+        </p>
+
+        <div className="max-w-[780px] mx-auto mt-[44px]">
+          {Questions.map((item) => {
+            const isActive = activeId === item.id;
+            return (
+              <React.Fragment key={item.id}>
+                <div
+                  className={`min-w-[320px] lg:max-w-[780px] text-start h-[70px] flex-shrink-0 border-b-2 md:border-[#E8E8E8] md:border-4 md:rounded-[10px] md:my-[12px] mx-auto ${
+                    isActive ? styles.open : styles.closed
+                  }`}
+                  onClick={() => handleToggle(item.id)}
+                >
+                  <h1 className="text-[16px] lg:text-[22px] text-[#14243C] leading-[30px] p-[20px]">
+                    {item.question}
+                  </h1>
+                </div>
+                {isActive && (
+                  <div
+                    id={item.id}
+                    className={`max-w-[780px] mt-0 md:mt-[12px] border-b-2 text-start  md:h-[180px] flex-shrink-0 md:rounded-[10px] md:border-[#68BAE3] md:border-4 ${styles.open}`}
+                  >
+                    <div className="flex flex-col p-[20px]">
+                      <h1 className="text-[#68BAE3] text-[16px] lg:text-[22px] font-normal">
+                        {item.question}
+                      </h1>
+                      <p className="my-[12px] text-[16px] text-grey">
+                        {item.answer}
+                      </p>
+                    </div>
+                  </div>
+                )}
+              </React.Fragment>
+            );
+          })}
+        </div>
+        <h1 className="text-[22px] lg:text-[42px] text-blue mt-[100px]">
+          Still have a question?
+        </h1>
+        <p className="text-[16px] min-w-[241px] p-[39px] lg:p-0 lg:text-[22px]  sm:max-w-[704px] mx-auto text-center text-grey">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore
+        </p>
+        <div className="flex flex-col lg:flex-row justify-center items-center mt-[44px]">
+          {Boxes.map((item) => {
+            return (
+              <div
+                key={item.id}
+                className="w-[280px] h-[199px] lg:w-[380px] lg:h-[199px] mt-[17px] lg:mt-0  rounded-[10px] border-[#E8E8E8] border-2  lg:ml-[20px] relative"
+              >
+                <div className="relative text-center top-[50%] ">
+                  <h1 className="text-[22px] text-[#14243C]  ">{item.h1}</h1>
+                  <p className="text-[#868E95] text-[16px]">{item.p}</p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </Wrapper>
+  );
+};
+
+export default QuerySection; -->

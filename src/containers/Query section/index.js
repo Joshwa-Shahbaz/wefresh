@@ -6,14 +6,15 @@ import Wrapper from "@/component/Wrapper";
 // content
 import { Questions, Boxes } from "../content";
 
-// styles
-import styles from "./index.module.css";
-
 const QuerySection = () => {
   const [activeId, setActiveId] = useState(null);
+  const [height, setHeight] = useState(0);
 
-  const handleToggle = (id) => {
+  const handleToggle = (id, e) => {
     setActiveId((prevId) => (prevId === id ? null : id));
+
+    const answerHeight = e.currentTarget.querySelector(".answer").scrollHeight;
+    setHeight(answerHeight);
   };
 
   return (
@@ -32,30 +33,30 @@ const QuerySection = () => {
             return (
               <React.Fragment key={item.id}>
                 <div
-                  className={`min-w-[320px] lg:max-w-[780px] text-start h-[70px] flex-shrink-0 border-b-2 md:border-[#E8E8E8] md:border-4 md:rounded-[10px] md:my-[12px] mx-auto ${
-                    isActive ? styles.open : styles.closed
+                  className={`min-w-[320px] lg:max-w-[780px] text-start flex-shrink-0 border-b-2 border-[#E8E8E8] cursor-pointer  md:border-4 md:rounded-[10px] md:my-[12px] p-[20px] mx-auto transition-all ${
+                    isActive ? "md:border-[#68BAE3]" : ""
                   }`}
-                  onClick={() => handleToggle(item.id)}
+                  onClick={(e) => handleToggle(item.id, e)}
                 >
-                  <h1 className="text-[16px] lg:text-[22px] text-[#14243C] leading-[30px] p-[20px]">
+                  <h1
+                    className={`text-[16px] lg:text-[22px] text-[#14243C] leading-[30px] ${
+                      isActive ? "sm:text-blue" : "sm:text-[#14243C]"
+                    }`}
+                  >
                     {item.question}
                   </h1>
-                </div>
-                {isActive && (
-                  <div
-                    id={item.id}
-                    className={`max-w-[780px] mt-0 md:mt-[12px] border-b-2 text-start  md:h-[180px] flex-shrink-0 md:rounded-[10px] md:border-[#68BAE3] md:border-4 ${styles.open}`}
+
+                  <p
+                    style={{
+                      height: isActive ? height : 0,
+                    }}
+                    className={`${
+                      isActive ? "mt-4" : ""
+                    } transition-all overflow-hidden answer`}
                   >
-                    <div className="flex flex-col p-[20px]">
-                      <h1 className="text-[#68BAE3] text-[16px] lg:text-[22px] font-normal">
-                        {item.question}
-                      </h1>
-                      <p className="my-[12px] text-[16px] text-grey">
-                        {item.answer}
-                      </p>
-                    </div>
-                  </div>
-                )}
+                    {item.answer}
+                  </p>
+                </div>
               </React.Fragment>
             );
           })}
@@ -63,7 +64,7 @@ const QuerySection = () => {
         <h1 className="text-[22px] lg:text-[42px] text-blue mt-[100px]">
           Still have a question?
         </h1>
-        <p className="text-[16px] min-w-[241px] p-[39px] lg:p-0 lg:text-[22px]  sm:max-w-[704px] mx-auto text-center text-grey">
+        <p className="text-[16px] min-w-[241px] p-[39px] lg:p-0 lg:text-[22px]  sm:max-w-[704px] mx-auto text-center lg:text-grey">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore
         </p>
