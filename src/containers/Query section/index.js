@@ -33,8 +33,8 @@ const QuerySection = () => {
             return (
               <React.Fragment key={item.id}>
                 <div
-                  className={`min-w-[320px] lg:max-w-[780px] text-start flex-shrink-0 border-b-2 border-[#E8E8E8] cursor-pointer  md:border-4 md:rounded-[10px] md:my-[12px] p-[20px] mx-auto transition-all ${
-                    isActive ? "md:border-[#68BAE3]" : ""
+                  className={`min-w-[320px] lg:max-w-[780px] text-start flex-shrink-0 border-b-2 md:border-[#E8E8E8] cursor-pointer  md:border-4 md:rounded-[10px] md:my-[12px] p-[20px] mx-auto transition-all ${
+                    isActive ? "md:border-blue" : ""
                   }`}
                   onClick={(e) => handleToggle(item.id, e)}
                 >
