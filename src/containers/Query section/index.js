@@ -40,7 +40,7 @@ const QuerySection = () => {
                 >
                   <h1
                     className={`text-[16px] lg:text-[22px] text-[#14243C] leading-[30px] ${
-                      isActive ? "sm:text-blue" : "sm:text-[#14243C]"
+                      isActive ? "text-blue" : "text-[#14243C]"
                     }`}
                   >
                     {item.question}
